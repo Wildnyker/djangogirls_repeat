@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Django Girls blog</title>
+    </head>
+    <body>
+        <div>
+            {% for post in posts %}
+                <div>
+                    <p>published: {{ post.published_date }}</p>
+                    <h2><a href="">{{ post.title }}</a></h2>
+                    <p>{{ post.text }}</p>
+                </div>
+            {% endfor %}
+
+        </div>
+    </body>
+</html>

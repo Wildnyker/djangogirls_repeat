@@ -14,8 +14,19 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include #15 add include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include('blog.urls'))
 ]
+
+
+#16 this is the start of creating home url
+# will create a connection to blog.urls - but you need to create it
+"""
+Django will now redirect everything that comes 
+into 'http://127.0.0.1:8000/' to blog.urls and looks for further instructions there.   
+    
+"""
+

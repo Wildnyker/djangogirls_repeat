@@ -5,3 +5,4 @@ from .models import Post #11 import your model
 admin.site.register(Post)
 
 #13 create adminuser - python manage.py createsuperuser
+#14 go to site urls
